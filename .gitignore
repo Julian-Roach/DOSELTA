@@ -7,7 +7,7 @@
 *.sln
 *.vcxproj
 *.vcxproj.filters
-DOSELTA debug
+DOSELTA debug/
 
 # User-specific files
 *.rsuser
