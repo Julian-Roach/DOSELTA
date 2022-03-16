@@ -8,6 +8,7 @@ namespace DOS
 	{
 		// Create the DOSELTA_DATA directory. It won't do anything if the directory does not exist.
 		system("mkdir " DOSELTA_DIRECTORYNAME); // BAD PRACTICE; ONLY FOR WINDOWS
+
 		DOS::ClearScreen(); // Clear, in case it notifies about the directory already existing.
 	}
 }
