@@ -6,8 +6,11 @@ THE CHANGELOG OF DOSELTA
 - This is a Data Oriented, Small and Efficient c++ Library for Task Automation.
 
 
-(v1.0.1) Minor fixes:
+(v1.0.1) (16.3.2022) Minor fixes:
 - Added the changelog file.
 - It won't log whether the DOSELTA_DATA directory exists or not at the beginning of the run anymore.
 - Made it C++14-friendly; removed the <filesystem> include, replacing it's commands with system("mkdir DOSELTA_DATA") instead.
 - Made it even more non-windows OS hostile; system("") can only be used on windows.
+
+(v1.0.2) (16.3.2022) Minor fixes:
+- Added removePage() for the BookFile class.

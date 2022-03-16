@@ -61,5 +61,17 @@ namespace DOS
 			return _pages[pageIndex];
 	}
 
+	void BookFile::removePage(size_t pageIndex)
+	{
+		if (pageIndex > _pages.size() - 1 || pageIndex < 0)
+			return;
+
+		for (size_t i = 1; i <= _pages.size() - 1 - pageIndex; i++)
+		{
+			_pages[pageIndex + i - 1] = _pages[pageIndex + i];
+		}
+		_pages.pop_back();
+	}
+
 	size_t BookFile::size() { return _pages.size(); }
 }

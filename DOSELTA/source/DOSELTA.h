@@ -129,6 +129,7 @@ namespace DOS
 		void addPage(std::string newPage);
 		void setPage(size_t pageIndex, std::string newPage);
 		std::string getPage(size_t pageIndex);
+		void removePage(size_t pageIndex);
 
 		size_t size();
 	private:
