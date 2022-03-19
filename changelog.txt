@@ -12,8 +12,10 @@ THE CHANGELOG OF DOSELTA
 - Made it C++14-friendly; removed the <filesystem> include, replacing it's commands with system("mkdir DOSELTA_DATA") instead.
 - Made it even more non-windows OS hostile; system("") can only be used on windows.
 
+
 (v1.0.2) (16.3.2022) Minor fixes:
 - Added removePage() for the BookFile class.
+
 
 (v1.0.3) (19.3.2022) Medium fixes:
 - Added the NOPFX macro.
