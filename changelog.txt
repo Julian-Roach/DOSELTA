@@ -26,3 +26,7 @@ THE CHANGELOG OF DOSELTA
 - Removed macros.h, because that file was actually useless to the library.
 - Removed some redundant semicolons at the end of macros' definitions in DOSELTA.h
 - Including the binary .lib file of DOSELTA on GitHub now.
+
+
+(v1.0.4) (19.3.2022) Minor fixes:
+- The BookFile and NumbersetFile won't read and append an empty value to their vectors if the file is empty anymore.

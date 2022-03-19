@@ -18,7 +18,9 @@ namespace DOS
 		while (!file.eof())
 		{
 			getline(file, data);
-			_numbers.push_back(std::stoi(data));
+
+			if (data != "")
+				_numbers.push_back(std::stoi(data));
 		}
 
 		file.close();

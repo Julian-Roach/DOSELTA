@@ -18,7 +18,9 @@ namespace DOS
 		while (!file.eof())
 		{
 			getline(file, data);
-			_pages.push_back(data);
+
+			if (data != "")
+				_pages.push_back(data);
 		}
 
 		file.close();
