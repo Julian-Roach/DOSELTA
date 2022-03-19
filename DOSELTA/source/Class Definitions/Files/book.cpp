@@ -31,8 +31,10 @@ namespace DOS
 
 		file.open(DOSELTA_DIRECTORYNAME "/" + name + DOSELTA_FILEEXTENSION);
 
-		// Write the first value without an endline.
-		file << _pages[0];
+		// Write the first value without an endline, if the vector is not empty.
+		if (_pages.size() > 0)
+			file << _pages[0];
+
 		for (size_t i = 1; i < this->size(); i++)
 			file << std::endl << _pages[i];
 

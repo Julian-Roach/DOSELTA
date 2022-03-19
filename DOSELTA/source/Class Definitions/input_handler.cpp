@@ -31,7 +31,7 @@ namespace DOS
 
 		// Get the arguments.
 		std::string product = "";
-		int argIndex = 0;
+		unsigned int argIndex = 0;
 		for (unsigned int i = 0; i < unprocessed.size() && _arguments.size() > argIndex; i++)
 		{
 			if (unprocessed[i] != _inputSeparator)
