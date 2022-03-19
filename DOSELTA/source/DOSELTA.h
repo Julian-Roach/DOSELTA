@@ -41,6 +41,8 @@ all of that data permamently.
 #define HARMLESS_FILENOTFOUND(fileName) "The file \"" + fileName + "\" was not found; no data received."
 
 // The prefix space must be 12 characters long, for convienent reading.
+#define NOPFX "          | "
+
 #define LOG_NOPFX(content)\
 	std::cout << "          | " << content << std::endl
 
@@ -48,17 +50,18 @@ all of that data permamently.
 	std::cout << "[PROBLEM] | " << problem << std::endl
 
 #define LOG_FATAL(fatal)\
-	std::cout << "[FATAL]   |" << fatal << std::endl;
+	std::cout << "[FATAL]   |" << fatal << std::endl
 
 #define LOG_COMMAND(commandName, commandDescription)\
 	std::cout << "[COMMAND] | " << commandName << " - " << commandDescription << std::endl
 
 #define LOG_INPUTARROWS\
-	std::cout << "[INPUT]   | >>> ";
+	std::cout << "[INPUT]   | >>> "
 
 // DOSELTA macros.
 #define DOSELTA_DIRECTORYNAME "DOSELTA_DATA"
 #define DOSELTA_FILEEXTENSION ".doselta"
+
 
 // DOS NAMESPACE
 namespace DOS

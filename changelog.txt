@@ -14,3 +14,12 @@ THE CHANGELOG OF DOSELTA
 
 (v1.0.2) (16.3.2022) Minor fixes:
 - Added removePage() for the BookFile class.
+
+(v1.0.3) (19.3.2022) Medium fixes:
+- Added the NOPFX macro.
+- The NumbersetFile and BookFile won't push their first value into a file immedaitely after the write() function
+  is called, the write() function checks if the size of their value vector is higher than 0 (empty) first.
+- Fixed the signed/unsigned mismatch warning; in input_handler.cpp, the argIndex variable was defined as a normal
+  integer, and later compared with unsigned-integer values. ArgIndex is defined as an unsigned integer now.
+- Removed macros.h, because that file was actually useless to the library.
+- Removed some redundant semicolons at the end of macros' definitions in DOSELTA.h
