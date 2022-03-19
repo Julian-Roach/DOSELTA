@@ -23,3 +23,4 @@ THE CHANGELOG OF DOSELTA
   integer, and later compared with unsigned-integer values. ArgIndex is defined as an unsigned integer now.
 - Removed macros.h, because that file was actually useless to the library.
 - Removed some redundant semicolons at the end of macros' definitions in DOSELTA.h
+- Including the binary .lib file of DOSELTA on GitHub now.
